@@ -1,0 +1,1 @@
+# Negative relationship between curiosity and confidence in visual perception task

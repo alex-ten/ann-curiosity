@@ -1,0 +1,32 @@
+name = "IACTools"
+uuid = "9f8a9a17-3fca-4c34-aa86-943bf81cfa04"
+authors = ["Alexandr Ten"]
+version = "1.0.0-DEV"
+
+[deps]
+AlgebraOfGraphics = "cbdf2221-f076-402e-a563-3d30da359d67"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Chain = "8be319e6-bccf-4806-a6f7-6fae938471bc"
+ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
+Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+IAC = "cbbd305f-ac41-484d-b1b6-5df801621e6e"
+InvertedIndices = "41ab1584-1d38-5bbf-9106-f11c6c58b48f"
+LogExpFunctions = "2ab3a3ac-af41-5b50-aa03-7779005ae688"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+
+[compat]
+julia = "1.10.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
