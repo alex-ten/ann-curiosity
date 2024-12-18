@@ -1,19 +1,14 @@
 # Effect of information-gap size on curiosity independent of confidence
-
-using Pkg; Pkg.activate("IACTools")
 using Revise
-
 using AlgebraOfGraphics
+using CSV
+using CairoMakie
+using DataFrames, DataFramesMeta
+using Distributions
+using StatsBase
+
 using IAC
 using IACTools
-using Chain
-using CSV
-using DataFrames, DataFramesMeta
-using DelimitedFiles
-using Distributions
-using GLMakie
-using LogExpFunctions
-using StatsBase
 
 function mask_letters(word::S, indices::Vector{Int}) where S <: AbstractString
     return map(x -> x[1] in indices ? '_' : x[2], enumerate(word)) |> join
@@ -95,3 +90,4 @@ end
 fig = Figure()
 layer = data(df) * mapping(:confid, :cur; color=:letters_missing => nonnumeric) * (smooth() + visual(Scatter))
 draw(layer, legend=(position=:top, titleposition=:left, framevisible=true, padding=5))
+fig

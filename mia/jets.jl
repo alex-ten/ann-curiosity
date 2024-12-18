@@ -1,14 +1,22 @@
-# Inverted-U relationship between confidence and curiosity for general-knowledge questions.
-using Revise
-using AlgebraOfGraphics
-using CSV
-using CairoMakie
-using DataFrames, DataFramesMeta
-using Distributions
-using StatsBase
-
+# Load local modules
+push!(LOAD_PATH, joinpath(@__DIR__, "src"))
 using IAC
 using IACTools
+
+using Revise
+
+using AlgebraOfGraphics
+using IAC
+using IACTools
+using Chain
+using CSV
+using DataFrames, DataFramesMeta
+using DelimitedFiles
+using Distributions
+using GLMakie
+using LogExpFunctions
+using StatsBase
+
 
 # Set up simulation params
 simparams = (
@@ -70,8 +78,7 @@ for subj in 1:simparams.N
         item = testbank[ind]
         inputs = item[1]
         feature = item[2]
-        # states = query(iacn, inputs, feature, simparams.T, simparams.tol)
-        states = query(iacn, inputs, simparams.T, simparams.tol)
+        states = query(iacn, inputs, feature, simparams.T, simparams.tol)
         last_t = maximum(states.t)
 
         # Record confidence
@@ -101,4 +108,3 @@ end
 fig = Figure()
 layer = data(df) * mapping(:confid, :cur; color=:dmgB) * (smooth() + visual(Scatter))
 draw!(fig, layer)
-fig

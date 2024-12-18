@@ -1,16 +1,11 @@
-name = "IACTools"
-uuid = "7442200a-51fa-4a52-846d-187c2f17ee57"
-authors = ["alex-ten <tenalexander1991@gmail.com>"]
-version = "0.1.0"
-
 [deps]
 AlgebraOfGraphics = "cbdf2221-f076-402e-a563-3d30da359d67"
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
-Chain = "8be319e6-bccf-4806-a6f7-6fae938471bc"
-ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 IAC = "3ad2f013-509d-46c3-88aa-0d8e31f3ea22"
-LogExpFunctions = "2ab3a3ac-af41-5b50-aa03-7779005ae688"
+IACTools = "7442200a-51fa-4a52-846d-187c2f17ee57"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"

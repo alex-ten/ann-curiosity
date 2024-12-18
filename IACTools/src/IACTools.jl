@@ -6,8 +6,7 @@ using Chain
 using ColorSchemes
 using CSV
 using DataFrames, DataFramesMeta
-using GLMakie
-# using CairoMakie
+using CairoMakie
 using LogExpFunctions
 using StatsBase
 

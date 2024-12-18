@@ -1,17 +1,9 @@
 name = "IAC"
-uuid = "cbbd305f-ac41-484d-b1b6-5df801621e6e"
-authors = ["Alexandr Ten"]
-version = "1.0.0-DEV"
+uuid = "3ad2f013-509d-46c3-88aa-0d8e31f3ea22"
+authors = ["alex-ten <tenalexander1991@gmail.com>"]
+version = "0.1.0"
 
 [deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
-Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
-
-[compat]
-julia = "1.10.3"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
